@@ -16,7 +16,11 @@
     
     NSString * baiduUrl = [@"baiduboxapp://v1/browser/open?url=" stringByAppendingString:url];
     
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:baiduUrl]]) {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baiduboxapp://"]]) {
+        url = baiduUrl;
+    }
+    else if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baiduboxlite://"]]) {
+        baiduUrl = [@"baiduboxlite://v1/browser/open?url=" stringByAppendingString:url];
         url = baiduUrl;
     }
     
@@ -34,7 +38,11 @@
     
     NSString * baiduUrl = [@"baiduboxapp://v1/browser/open?url=" stringByAppendingString:url];
     
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:baiduUrl]]) {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baiduboxapp://"]]) {
+        url = baiduUrl;
+    }
+    else if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baiduboxlite://"]]) {
+        baiduUrl = [@"baiduboxlite://v1/browser/open?url=" stringByAppendingString:url];
         url = baiduUrl;
     }
     
