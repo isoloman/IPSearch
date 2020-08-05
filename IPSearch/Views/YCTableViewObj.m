@@ -60,7 +60,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (_didSelectedBlock) {
+    if (_didSelectedBlock&&[[_dataSource[indexPath.section] valueForKey:@"name"] isEqualToString:@"rDNS"]) {
         _didSelectedBlock([_dataSource[indexPath.section] valueForKey:@"addr"]);
     }
 }
