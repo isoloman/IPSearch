@@ -1,0 +1,27 @@
+//
+//  IPSearch-PrefixHeader.pch
+//  IPSearch
+//
+//  Created by Gloryyin on 2020/3/12.
+//  Copyright © 2020 Gloryyin. All rights reserved.
+//
+
+#ifndef IPSearch_PrefixHeader_pch
+#define IPSearch_PrefixHeader_pch
+
+#import "YCAdaption.h"
+#import "NSLayoutConstraint+YCIBDesignable.h"
+#import "UIView+YC.h"
+#import "UIView+YCCore.h"
+#import "YTKNetwork.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "YYModel.h"
+#import "YCMacros.h"
+#import "SSBaseRequest.h"
+#import "LDNetDiagnoService.h"
+#import "YCColorManager.h"
+#import "YCStorage.h"
+#import "UIControl+JXCustom.h"
+
+#endif /* IPSearch_PrefixHeader_pch */
